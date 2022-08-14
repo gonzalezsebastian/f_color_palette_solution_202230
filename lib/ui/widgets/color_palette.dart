@@ -33,6 +33,7 @@ class ColorPalette extends StatelessWidget {
             Expanded(
                 flex: 4,
                 child: GestureDetector(
+                  onTap: () => callback(baseColor),
                   child: Container(
                     height: 100,
                     color: ColorUtils.FromHex(baseColor),
@@ -41,6 +42,7 @@ class ColorPalette extends StatelessWidget {
             Expanded(
                 flex: 3,
                 child: GestureDetector(
+                  onTap: () => callback(baseColor1),
                   child: Container(
                     height: 100,
                     color: ColorUtils.FromHex(baseColor1),
@@ -49,6 +51,7 @@ class ColorPalette extends StatelessWidget {
             Expanded(
                 flex: 2,
                 child: GestureDetector(
+                  onTap: () => callback(baseColor2),
                   child: Container(
                     height: 100,
                     color: ColorUtils.FromHex(baseColor2),
@@ -57,6 +60,7 @@ class ColorPalette extends StatelessWidget {
             Expanded(
                 flex: 1,
                 child: GestureDetector(
+                  onTap: () => callback(baseColor3),
                   child: Container(
                     height: 100,
                     color: ColorUtils.FromHex(baseColor3),

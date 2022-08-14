@@ -77,7 +77,7 @@ class ColorSelectionPage extends StatelessWidget {
     Clipboard.setData(ClipboardData(text: value));
     Get.snackbar(
       'Color palette',
-      'Valor copiado',
+      '#' + value,
       backgroundColor: ColorUtils.FromHex(value),
       snackPosition: SnackPosition.BOTTOM,
     );
